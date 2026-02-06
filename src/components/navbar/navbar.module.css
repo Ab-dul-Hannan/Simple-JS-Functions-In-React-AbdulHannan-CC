@@ -1,0 +1,43 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logobtn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #1c2120;
+  width: fit-content;
+  border-radius: 40px;
+  /* color: #7ed957; */
+  font-size: 14px;
+  cursor: default;
+}
+
+.announce {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1c2120;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .logobtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .announce {
+    text-align: center;
+  }
+  .cornericon {
+    display: none;
+  }
+}
