@@ -1,12 +1,12 @@
 .counterbox{
     background-color: #1c2120;
     border-radius: 40px;
-    height: 240px;
+    height: max-content;
     width: 260px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .screen{
@@ -14,7 +14,7 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: right;
 }
 
@@ -27,7 +27,7 @@
 .btns{
     width: 100%;
     outline: none;
-    padding: 18px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,3 +37,21 @@
     color: #ffffff;
 }
 
+.b1{
+    border-radius: 40px 0px 0px 40px;
+    transition: transform 0.3s ease;
+}
+.b3{
+    border-radius: 0px 40px 40px 0px;
+    transition: transform 0.3s ease;
+}
+.b2{
+    border-left: 0px;
+    border-right: 0px;
+    transition: transform 0.3s ease;
+}
+
+.b1:hover,.b2:hover, .b3:hover{
+    background-color: #7ed957;
+    transform: scale(1.08);
+}
