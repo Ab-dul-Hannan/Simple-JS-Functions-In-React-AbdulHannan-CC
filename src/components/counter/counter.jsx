@@ -14,19 +14,17 @@ const counter = () => {
             <div className={styles.playbtns}>
                 <button className={`${styles.btns} ${styles.b1}`}
                 onClick={() => {
-                    value--;
-                    setValue(value);
+                    setValue(prevValue => prevValue - 1);
                 }}><ArrowLeft /></button>
 
                 <button className={`${styles.btns} ${styles.b2}`} 
                 onClick={() => {
-                    setValue(value = 0);
+                    setValue(0);
                 }}><Ban /></button>
 
                 <button className={`${styles.btns} ${styles.b3}`} 
                 onClick={() => {
-                    value++;
-                    setValue(value);
+                    setValue(prevValue => prevValue + 1);
                 }}><ArrowRight /></button>
             </div>
         </div>
